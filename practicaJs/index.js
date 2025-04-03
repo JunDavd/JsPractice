@@ -30,3 +30,41 @@
     
 // }
 
+
+// const area = (radius) => {
+//     const PI = 3.14
+//     return 2 * PI * radius
+// }
+
+
+// document.getElementById('mySubmit').onclick = function(){
+//     let radius = document.getElementById('myText').value
+//     radius = Number(radius)
+//     const result = area(radius)
+//     document.getElementById('myH3').textContent = `${result} cm`
+// }
+
+// document.getElementById('mySubmit').onclick = function(){
+//     let userValue = document.getElementById('myText').value;
+//     userValue = Number(userValue)
+//     let result = area(userValue)
+//     document.getElementById('myH3').textContent = result
+// }
+
+
+
+
+//COUNTER PROGRAM 
+
+const decreaseBtn = document.getElementById('decreaseBtn')
+const reserBtn = document.getElementById('resetBtn')
+const increaseBtn = document.getElementById('increaseBtn')
+const countLabel = document.getElementById('countLabel')
+
+
+let count = 0
+
+increaseBtn.onclick = function(){
+    count ++
+    countLabel.textContent = count
+}
